@@ -1,30 +1,46 @@
-/vendor/
-node_modules/
-npm-debug.log
-yarn-error.log
+# =====================
+# Node.js / npm
+# =====================
+src/node_modules/
+npm-debug.log*
+yarn-error.log*
 
-# Laravel 4 specific
-bootstrap/compiled.php
-app/storage/
+# =====================
+# PHP / Composer
+# =====================
+src/vendor/
+src/composer.lock
 
-# Laravel 5 & Lumen specific
-public/storage
-public/hot
+# =====================
+# Environment
+# =====================
+src/.env
+src/.env.local
+src/.env.*.local
 
-# Laravel 5 & Lumen specific with changed public path
-public_html/storage
-public_html/hot
+# =====================
+# Docker
+# =====================
+docker-compose.override.yml
+*.log
 
-storage/*.key
-.env
-Homestead.yaml
-Homestead.json
-/.vagrant
-.phpunit.result.cache
+# =====================
+# IDE / Editor
+# =====================
+.idea/
+.vscode/
+*.swp
+*.swo
+.DS_Store
 
-/public/build
-/storage/pail
-.env.backup
-.env.production
-.phpactor.json
-auth.json
+# =====================
+# Sistema
+# =====================
+Thumbs.db
+desktop.ini
+
+# =====================
+# Logs e caches
+# =====================
+*.log
+.cache/

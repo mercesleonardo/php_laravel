@@ -9,11 +9,11 @@ services:
       - ./src:/var/www/html
       - ./docker/nginx/default.conf:/etc/nginx/conf.d/default.conf
     depends_on:
-      - php_laravel
-  php_laravel:
+      - php
+  php:
     build:
       context: ./docker/php
-    container_name: php_laravel
+    container_name: php
     restart: unless-stopped
     volumes:
       - ./src:/var/www/html
@@ -25,9 +25,9 @@ services:
     restart: unless-stopped
     environment:
       MYSQL_ROOT_PASSWORD: root
-      MYSQL_DATABASE: netshoes
-      MYSQL_USER: netshoes
-      MYSQL_PASSWORD: netshoes
+      MYSQL_DATABASE: php_laravel
+      MYSQL_USER: php_laravel
+      MYSQL_PASSWORD: php_laravel
     ports:
       - "3306:3306"
     volumes:

@@ -1,6 +1,8 @@
 <?php
 
-function view($view, $data = [])
+use Core\Library\Layout;
+
+function view($view, $data = [], $viewPath = VIEW_PATH)
 {
-    dd('View ' . $view . ' loaded with data: ' . json_encode($data));
+    return Layout::render($view, $data, $viewPath);
 }

@@ -2,6 +2,8 @@
 
 namespace Core\exceptions;
 
-class ControllerNotFoundException extends \Exception
+use Exception;
+
+class ControllerNotFoundException extends Exception
 {
 }

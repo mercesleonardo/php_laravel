@@ -6,6 +6,8 @@ class HomeController
 {
     public function index()
     {
-        dd("HomeController");
+        view('home', [
+            'title' => 'Home Page',
+        ]);
     }
 }

@@ -37,7 +37,7 @@ class App
     {
         try {
 
-            $dotenv = Dotenv::createImmutable(dirname(__DIR__, 2));
+            $dotenv = Dotenv::createImmutable(BASE_PATH);
             $dotenv->load();
         } catch (\Throwable $th) {
             dd($th->getMessage());

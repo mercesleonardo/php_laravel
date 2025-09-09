@@ -7,6 +7,7 @@ class LoginController
     public function index()
     {
     }
+
     public function store()
     {
     }

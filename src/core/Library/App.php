@@ -45,4 +45,11 @@ class App
 
         return $this;
     }
+
+    public function withTemplateEngine(string $engine): static
+    {
+        bind('engine', $engine);
+
+        return $this;
+    }
 }
